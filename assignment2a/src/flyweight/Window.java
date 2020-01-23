@@ -70,9 +70,9 @@ public class Window extends JPanel {
 	@Override
 	public void paintComponent(Graphics g) {
 		
-		//super.paintComponent(g);
+		super.paintComponent(g);
 		
-		for(int i = 0; i < 10; ++i) {
+		for(int i = 0; i < 20; ++i) {
 			
 			Circle circle = (Circle) ShapeFactory.getCircle(getRandomColor());
 			
@@ -86,7 +86,7 @@ public class Window extends JPanel {
 			
 		}
 		
-		for(int i = 0; i < 10; ++i) {
+		for(int i = 0; i < 20; ++i) {
 			
 			Square square = (Square) ShapeFactory.getSquare(getRandomColor());
 			
@@ -100,7 +100,7 @@ public class Window extends JPanel {
 			
 		}
 		
-		for(int i = 0; i < 10; ++i) {
+		for(int i = 0; i < 20; ++i) {
 			
 			Triangle triangle = (Triangle) ShapeFactory.getTriangle(getRandomColor());
 			

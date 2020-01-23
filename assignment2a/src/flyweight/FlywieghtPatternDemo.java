@@ -1,12 +1,18 @@
 package flyweight;
 
+import javax.swing.SwingUtilities;
+
 public class FlywieghtPatternDemo {
 		
 	public static void main(String[] args) {
 	
-		Window window = new Window(800, 600);
+		SwingUtilities.invokeLater(() -> {
 		
-		window.createAndShowGUI();
+			Window window = new Window(800, 600);
+		
+			window.createAndShowGUI();
+		
+		});
 		
 	}
 	
